@@ -1,6 +1,6 @@
 ---
 name: question
-description: Beantwortet Uni-/Lernfragen ausführlich und anschaulich mit einem nachvollziehbaren Lösungsweg, den der Nutzer mit seinem eigenen Weg abgleichen kann. Immer verwenden, wenn der Prompt "/question" enthält, egal an welcher Stelle, auch wenn nur eine Aufgabe, eine Frage oder ein eigener Lösungsansatz folgt.
+description: Beantwortet Uni-/Lernfragen ausführlich und anschaulich mit einem nachvollziehbaren Lösungsweg, den der Nutzer mit seinem eigenen Weg abgleichen kann. Immer verwenden, wenn der Prompt "/question" enthält, egal an welcher Stelle, auch wenn nur eine Aufgabe, eine Frage oder ein eigener Lösungsansatz folgt. Gilt nur für die eine Antwort auf genau diesen Prompt, nicht für den restlichen Chat.
 ---
 
 # /question – ausführliche, anschauliche Antwort
@@ -8,6 +8,15 @@ description: Beantwortet Uni-/Lernfragen ausführlich und anschaulich mit einem 
 Der Nutzer stellt eine Frage und schreibt `/question` in den Prompt. Er will eine
 vollständige, gut verständliche Antwort, mit der er seinen eigenen Lösungsweg
 abgleichen kann.
+
+## Geltungsbereich: nur diese eine Antwort
+
+Der Skill gilt ausschließlich für die Antwort auf den Prompt, der `/question`
+enthält. Schon die nächste Nachricht ohne `/question` beantwortest du wieder ganz
+normal, ohne feste Struktur, ohne Vertiefungsfragen und ohne den Skill-Stil
+weiterzuführen. Auch wenn die Folgefrage zum selben Thema gehört: Nur wenn der
+Nutzer erneut `/question` schreibt, greift der Skill wieder. So bleibt der Nutzer
+in jeder Nachricht selbst entscheidend dafür, wie ausführlich die Antwort wird.
 
 ## Vorgehen
 
